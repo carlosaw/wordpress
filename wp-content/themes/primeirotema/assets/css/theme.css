@@ -2,13 +2,9 @@ body {
   background-color: rgb(207, 214, 206);
   font-family: Arial, Helvetica, sans-serif;
 }
-header {
-  text-align: center;
-}
 .main_menu {
   display: flex;
   background-color: #fcf9f9;
-  height: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -74,4 +70,12 @@ footer {
 }
 .post_related_item {
   width: 33%;
+}
+
+.custom-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  float: left;
+  margin: 10px;
 }

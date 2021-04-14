@@ -20,7 +20,7 @@ body {
 .banner h2 {
   font-size: 30px;
   color: #FFF;
-  margin-top: 35px;
+  margin-top: 25px;
   line-height: 40px;
 }
 .banner h2 strong {
@@ -112,7 +112,6 @@ body {
 }
 .depoimentos {
   height: 100px;
-  background-color: #e3e3e3;
   padding-top: 17px;
 }
 .depoimentos img {
@@ -137,7 +136,6 @@ article.type-post {
   font-weight: bold;
 }
 .post_title a {
-  color: #2d3a64;
   text-decoration: none;
 }
 .post_title a:hover {
@@ -155,12 +153,8 @@ article.type-post {
   padding: 12px;
   font-size: 14px;
   color: #FFF;
-  background-color: #455482;
   display: inline-block;
   border-radius: 8px;
-}
-.post_button:hover {
-  background-color: #2e3d70;
 }
 
 .loadmoreBtn {
@@ -179,7 +173,6 @@ article.type-post {
 }
 
 .footer_up {
-  background-color: #455482;
   padding-top: 20px;
   padding-bottom: 30px;
 }
@@ -197,11 +190,11 @@ article.type-post {
   height: auto;  
 }
 .footer_down {
-  background-color: #2d3a64;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 15px;
   color: #FFF;
+  text-align: center;
 }
 
 .post_content {
@@ -216,24 +209,221 @@ article.type-post {
   width: 33%;
   float: left;
 }
-.comentario_area {
-  margin-top: 40px;
-  background-color: #DDD;
-}
-#respond {
-  border-top: 1px solid rgb(233, 229, 229);
-  margin-top: 26px;
-}
-.comentario_foto {
-  float: left;
-  margin-right: 15px;
-}
-textarea {
-  border-color: silver;
-  width: 50%;
-  height: 100px;
-}
 
 .post_related_title h2 {
   font-size: 20px;
+}
+
+.commentlist {
+  list-style: none;
+  padding: 0;
+}
+.comment-body{
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  max-width: 50%;
+}
+.commentlist .children {
+  list-style: none;
+}
+.commentlist .comment-meta {
+  display: none;
+}
+.commentlist .comment-author {
+  margin-bottom: 10px;
+}
+.commentlist .comment-author .says {
+  display: none;
+}
+.commentlist .reply {
+  text-align: right;
+}
+.comment-respond label {
+  display: block;
+}
+.comment-respond textarea,
+.comment-respond input[type=text] {
+  width: 300px;
+  border: 2px solid #DDD;
+  outline: 0;
+  padding: 5px;
+}
+.comment-respond .submit {
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #293a65;
+  background-color: #a0afe0;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 23px;
+  padding-right: 23px;
+}.comment-respond .submit:hover {
+  background-color: #95acf3;
+}
+
+
+
+/* 1024 */
+@media (max-width: 1024px) and (min-width:768px) {
+  .hero-image {
+    height: 252px;
+    margin-top: 45px;
+  }
+  .banner-small {
+    padding-bottom: 20px;
+  }
+  .banner-small .col-sm-6 h2 {
+    margin-top: 30px;
+    line-height: 50px;
+  }
+  .banner-small .optin {
+    margin-top: 30px;
+  }
+  .banner-small .optin_email {
+    width: 69%;
+    height: 35px;
+    border-radius: 5px;
+  }
+  .banner-small .optin_btn {
+    float: right;
+    height: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+  .banner h2 {
+    font-size: 25px;
+    color: #FFF;
+    margin-top: 22px;
+    line-height: 29px;
+  }
+  .banner .optin {
+    font-size: 20px;
+  }
+  .col-sm-7 {
+    margin-top: 20px;
+  }
+  .wp-block-embed iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+
+
+@media (max-width:995px) {
+  .hero-image {
+    height: 200px;
+  }
+  .banner .optin {
+    font-size: 17px;
+  }
+  .banner h2 {
+    line-height: 24px;
+  }
+  .banner .optin_email {
+    width: 66%;
+    height: 35px;
+    border-radius: 5px;
+  }
+  .banner .optin_btn {
+    height: 35px;
+    border-radius: 5px;
+  }
+  .post_excerpt {
+    margin-top: 0px;
+  }
+  .post_readmore {
+    display: none;
+  }
+}
+
+
+
+
+@media (max-width:767px) {
+  .custom-logo {
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+  .menuarea {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .menuarea nav {
+    float: none;
+  }
+  .menuarea nav li {
+    margin-left: 0;
+    float: none;
+    line-height: 30px;
+  }
+  .menuarea .social {
+   display: none;
+  }
+  .hero-image {
+    height: auto;
+    width: 100%;
+  }
+  .banner h2 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .banner .optin {
+    font-size: 15px;
+  }
+  .banner .optin_btn {
+    clear: both;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .banner .optin_email {    
+    width: 100%;   
+  }
+  .depoimentos {
+    height: auto;
+  }
+  .depoimentos img {
+    margin-bottom: 20px;
+  }
+  .depoimentos .col-sm-6 {
+    clear: both;
+  }
+
+  
+  h1 {
+    font-size: 25px;
+  }
+  .post_content {
+    margin-top: 0;
+  }
+  .post_button {
+    margin-bottom: 30px;
+  }
+  .cursos img {
+    margin-bottom: 20px;
+  }
+  .footer_up {
+    padding-bottom: 0px;
+  }
+  .footer_down {
+    text-align: center;
+    font-size: 12px;
+  }
+  article.type-post {
+    margin-bottom: 0px;
+  }
+  .wp-block-embed {
+    margin-bottom: -40px;
+}
+  .wp-block-embed iframe {
+    width: 100%;
+    height: 220px;
+  }
+
 }

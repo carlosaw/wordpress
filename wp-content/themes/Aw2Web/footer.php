@@ -30,10 +30,25 @@
     </div>
   </div>
 </footer>
+
 <script type="text/javascript">
   var ajaxUrl = "<?php echo admin_url('admin-ajax.php'); ?>";
 </script>
 
 <?php wp_footer(); ?>
+
+<style type="text/css">
+  .post_title a { 
+    color: <?php echo get_theme_mod('aa_cortitulo'); ?>;
+  }
+  .post_button {    
+  background-color: <?php echo get_theme_mod('aa_corbotao'); ?>;
+  }
+  .post_button:hover {    
+  background-color: <?php echo get_theme_mod('aa_corbotao'); ?>;
+  }
+  
+</style>
+
 </body>
 </html>

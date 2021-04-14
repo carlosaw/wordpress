@@ -18,7 +18,7 @@
             <input type="hidden" name="act" value="sub" />
             <input type="hidden" name="v" value="2" />
 
-            <input class="optin_email" type="email" name="email" placeholder="Digite seu melhor e-mail aqui" required />
+            <input class="optin_email" type="email" name="email" placeholder="Digite seu melhor e-mail" required />
 
             <input class="optin_btn" type="submit" value="Cadastrar" />
           </form>

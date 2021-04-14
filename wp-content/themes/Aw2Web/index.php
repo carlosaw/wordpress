@@ -4,6 +4,7 @@ get_template_part('template_parts/banner-home');
 ?>
 
 <div class="depoimentos">
+  
   <div class="container">
     <div class="col-sm-6">
       <?php
@@ -16,11 +17,11 @@ get_template_part('template_parts/banner-home');
       <img src="<?php echo $url[0]; ?>" />
               
           <i>"<?php echo $txt; ?>"</i><br/>
-          <?php echo(limit_words(get_the_excerpt(),10)); ?>
+          <!--/*<?php echo(limit_words(get_the_excerpt(),10)); ?>*/-->
         
       <strong><?php echo $autor; ?></strong>
     </div>
-
+  
     <div class="col-sm-6">
       <?php
         $d2 = rand(1,5);
@@ -35,11 +36,12 @@ get_template_part('template_parts/banner-home');
       <img src="<?php echo $url[0]; ?>" />
         
           <i>"<?php echo $txt; ?>"</i><br/>
-          <?php echo(limit_words(get_the_excerpt(),10)); ?>
+          <!--<?php echo(limit_words(get_the_excerpt(),10)); ?>-->
 
       <strong><?php echo $autor; ?></strong>
     </div>
   </div>
+  
 </div>
 
 <section>
@@ -63,3 +65,24 @@ get_template_part('template_parts/banner-home');
 </section>
 
 <?php get_footer(); ?>
+
+<style type="text/css">
+  .depoimentos {   
+  background-color: <?php echo get_theme_mod('aa_cordepoimentos'); ?>;
+  }
+  .post_button:hover {
+  background-color: <?php echo get_theme_mod('aa_corbotaoHover'); ?>;
+  }
+  header {
+    background-color: <?php echo get_theme_mod('aa_corheader'); ?>;
+  }
+  body {
+    background-color: <?php echo get_theme_mod('aa_corbody'); ?>;
+  }
+  .footer_up {    
+  background-color: <?php echo get_theme_mod('aa_corcursos'); ?>;
+  }
+  .footer_down {    
+  background-color: <?php echo get_theme_mod('aa_corfooter'); ?>;
+  }
+</style>

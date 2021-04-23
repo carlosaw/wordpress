@@ -36,4 +36,14 @@ function ar_activate_plugin() {
     add_option('ar_receita_opts', $opts);
   }
 
+  global $wp_roles;
+  add_role(
+    'receita_autor',
+    'Autor da Receita',
+    array(
+      'read' => true,
+      'upload_files' => true,
+      'edit_posts' => true
+    )
+  );
 }

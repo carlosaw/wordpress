@@ -1,8 +1,14 @@
-#teste {
-  background-color: red;
-  padding: 20px;
-  color: #FFF;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-#wpadminbar {
-  background-color: rgb(31, 31, 236);
+.ar_receitas_loginarea {
+  display: flex;
+  padding: 10px;
+}
+.ar_receitas_loginitem {
+  flex: 1;
+  margin: 10px;
+}
+.ar_hide_form {
+  display: none;
 }

@@ -37,6 +37,11 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define( 'DB_COLLATE', '' );
 
+/** Desablilita o Editor de Temas em aparencia   */
+define('DISALLOW_FILE_EDIT', true);
+
+
+
 /**#@+
  * Chaves únicas de autenticação e salts.
  *
@@ -50,14 +55,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'C~axp0-|qfD|@$gE,CDZy0CaD=WUBrq*:iB8^3jY4m^}G@]47nnaz9u1PB.i,Xd5' );
-define( 'SECURE_AUTH_KEY',  '-lfzzF7~&03dO,?Qh9hFHn`DP?rO#L]DE+[]Ko,$0m}KYz&&<anNPmCqe5e)-.|B' );
-define( 'LOGGED_IN_KEY',    ',d ==Yc8b(e.<9 R|#*r0/fx7z[pwqaFw6#*dWNPa*OF)gu7H#ldrzo:0-_a9Zs)' );
-define( 'NONCE_KEY',        'Z;3;G]oGj>@9KaYN?_*NEj6rv[rC; O>OZV )]O*HU]IeAPQ#XKW1Z0_j),[p{/L' );
-define( 'AUTH_SALT',        ' =[#xnN:m-KUax%)qc%d+S$sQ}@3)su81#n!o>98vr?_yS*P[h%W;I.W6Cj=  nx' );
-define( 'SECURE_AUTH_SALT', '(R =nN=(x(#COM{y!_+i&Dj#I@8Ag|~]Ptk]Jb;*Dl]#lnA*G7+_9:/^-MUm3C%<' );
-define( 'LOGGED_IN_SALT',   'Zm6>YSwrE+53JbKM!kF8-Avz%_>A=*<ZHs9L=7Al0S3Lm-*<-2Z(Pb:uHi[!-7fl' );
-define( 'NONCE_SALT',       'W*t[bvPQW~5:<0+6wTa_(~WB.g9tJ2&oxeF[u42?P=~kNJKJ(-NF*S-A#Ml7rANk' );
+define('AUTH_KEY',         'pG_P)@nT7[-f<3 c89^R5 pM8+cVk^`#V`P/OC:Zt!ZjEdx^TN(($h]v^m&rkrhB');
+define('SECURE_AUTH_KEY',  'B#;CQCV^)9Xa;>67[.VAQ)l} IF!#e<<<MWj=Wtmd])49U#)mV*T8K1+G@D?#{^@');
+define('LOGGED_IN_KEY',    'EJ-t/|$y&ATQ]>g|@u4}u|(hs:4&zVk!`]aX<a=]r|)==`0;}N6bC`=8GnZd8-V(');
+define('NONCE_KEY',        'Fz[&fyM+4WdeauSSlq^M=AhQBf#W8sQHG8Tam(0W;:oDiF(*lK^1J7Z?Hk-bZ>Ld');
+define('AUTH_SALT',        'G}D?5ZJ!x0+SFc(FZ%y-w,g{Kr,J=UD-ARNqRBjFp]|/R>Y84}ZDZds~3khMJCmp');
+define('SECURE_AUTH_SALT', '7po#CB[+x+.Osj[f%=r_d^EJ0JrMlp:!ABG)LW/H8g)SwQ R|o|VL{`^Vu-%=NQn');
+define('LOGGED_IN_SALT',   't!e.mtb{`XT;K}V-?%y2UcA}?4%r[[Vj~o:b+e[|;^p=w+ZG|#*1F=+RZ}/.SkZR');
+define('NONCE_SALT',       's-A.-9iN2MKrQSZnFVC*4+01>0`-l?Qs.3TS7Ma+J0D(K_izZZQu6?]AWwFlWEO/');
 
 /**#@-*/
 
@@ -93,3 +98,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Configura as variáveis e arquivos do WordPress. */
 require_once ABSPATH . 'wp-settings.php';
+
